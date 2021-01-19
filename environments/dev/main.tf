@@ -53,14 +53,14 @@ module "gke" {
       min_count          = 1
       max_count          = 100
       local_ssd_count    = 0
-      disk_size_gb       = 100
+      disk_size_gb       = 10
       disk_type          = "pd-standard"
       image_type         = "COS"
       auto_repair        = true
       auto_upgrade       = true
       service_account    = "project-service-account@${var.project}.iam.gserviceaccount.com"
       preemptible        = false
-      initial_node_count = 80
+      initial_node_count = 1
     },
   ]
 
