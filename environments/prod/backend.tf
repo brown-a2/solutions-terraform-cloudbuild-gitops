@@ -16,6 +16,6 @@
 terraform {
   backend "gcs" {
     bucket = "titan-project-b-tfstate"
-    prefix = "env/dev"
+    prefix = "env/prod"
   }
 }
