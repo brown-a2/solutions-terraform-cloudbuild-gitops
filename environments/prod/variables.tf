@@ -1,5 +1,5 @@
 variable "name" {
-  default = "demo-cluster"
+  default = "titan-b-k8s-cluster"
 }
 
 variable "project" {
