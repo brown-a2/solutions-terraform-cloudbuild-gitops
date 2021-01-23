@@ -1,7 +1,11 @@
+locals {
+  env = "prod"
+}
+
 resource "google_container_cluster" "default" {
   name        = var.name
   project     = var.project
-  description = "Titan GKE Cluster"
+  description = "Tita GKE Cluster (PROD)"
   location    = var.location
 
   remove_default_node_pool = true
