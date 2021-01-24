@@ -1,21 +1,21 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: demo
+  name: titan
   namespace: default
 spec:
   selector:
     matchLabels:
-      run: demo
+      run: titan
   template:
     metadata:
       labels:
-        run: demo
+        run: titan
     spec:
       containers:
       - image: nginx:latest
         imagePullPolicy: IfNotPresent
-        name: demo
+        name: titan
         ports:
         - containerPort: 80
           protocol: TCP

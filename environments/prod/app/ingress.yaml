@@ -1,8 +1,8 @@
 apiVersion: extensions/v1beta1
 kind: Ingress
 metadata:
-  name: demo-ingress
+  name: titan-ingress
 spec:
   backend:
-    serviceName: demo
+    serviceName: titan
     servicePort: 80
